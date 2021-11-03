@@ -1,0 +1,87 @@
+<div class="container-fluid col-xl-12 col-xxl-8 px-4 py-3">
+    <div class="row align-items-center g-lg-5 py-3">
+        <div class="col-md-10 mx-auto col-lg-5">
+            <form id="f_reg0" class="p-4 p-md-4 border rounded-3 bg-light">
+                <h1 class="h3 mb-3 fw-normal">Register for free</h1>
+                <div class="collapse show" id="reg0">
+                    <div class="mb-2">
+                        <label for="Email">Email</label>
+                        <input type="text" class="form-control" ng-model="email1" required/>
+                        <div class="invalid-feedback" id="fb_email"></div>
+                    </div>
+                    <div class="mb-2">
+                        <label for="Password">Password</label>
+                        <input type="password" class="form-control" ng-model="password1" required/>
+                        <div class="invalid-feedback" id="fb_password1"></div>
+                    </div>
+                    <div class="mb-2">
+                        <label for="Confirm Password">Confirm Password</label>
+                        <input type="password" class="form-control" ng-model="password2" required/>
+                        <div class="invalid-feedback" id="fb_password2">sdfasf</div>
+                    </div>
+                    <div class="row p-md-2" >
+                        <div class="col"></div>
+                        <div class="col-sm-1"></div>
+                        <button class="col btn btn-lg btn-primary" type="button" ng-click="$ctrl.onNext0()">Confirm</button>
+                    </div>
+                </div>
+            </form>    
+                <div class="collapse" id="reg1">
+                    <div class="row">
+                        <div class="col-4 mb-2">
+                            <label for="floatingInput">Title</label>
+                            <select class="form-select" aria-label="Default select example">
+                                <option selected>Select Title</option>
+                                <option value="1">Mr</option>
+                                <option value="0">Miss</option>
+                            </select>
+                        </div>
+                        <div class="col mb-2">
+                            <label for="floatingInput">Name </label>
+                            <input type="text" class="form-control" ng-model="name" />
+                            <small id="nameHelp" class="form-text text-muted">Type your initial or surname at
+                                last</small>
+                        </div>
+                    </div>
+                    <div class="mb-2">
+                        <label for="floatingInput">Father's Name</label>
+                        <input type="text" class="form-control" ng-model="father" />
+                    </div>
+                    <div class="mb-2">
+                        <label for="floatingInput">Date of Birth</label>
+                        <input type="date" class="form-control" ng-model="dob" />
+                    </div>
+                    <div class="mb-2">
+                        <label for="floatingInput">Highest Education</label>
+                        <input type="text" class="form-control" ng-model="education" />
+                    </div>
+                    <div class="mb-2">
+                        <label for="floatingInput">Job</label>
+                        <input type="text" class="form-control" ng-model="job" />
+                    </div>
+                </div>
+                <div class="collapse" id="reg2">
+                    <div class="mb-2">
+                        <label for="floatingInput">Rasi</label>
+                        <input type="text" class="form-control" ng-model="Rasi" />
+                    </div>
+                    <div class="mb-2">
+                        <label for="floatingInput">Star</label>
+                        <input type="text" class="form-control" ng-model="star" />
+                    </div>
+                    <div class="mb-2">
+                        <label for="floatingInput">Gothram</label>
+                        <input type="text" class="form-control" ng-model="gotharam" />
+                    </div>
+                </div>
+           <!--     <div class="row p-md-2" id="regPNButton">
+                    <button class="col btn-lg btn-primary" type="button" ng-click="$ctrl.onPrevious()">Previous</button>
+                    <div class="col-sm-1"></div>
+                    <button class="col btn btn-lg btn-primary" type="button" ng-click="$ctrl.onNext()">Next</button>
+                </div>
+                <div class="row p-md-2 collapse" id="regSubButton">
+                    <button class="col btn-lg btn-primary" type="button" ng-click="$ctrl.onSubmit()">Submit</button>
+                </div> -->
+        </div>
+    </div>
+</div>
